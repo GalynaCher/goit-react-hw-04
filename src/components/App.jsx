@@ -53,7 +53,7 @@ function App() {
         const data = await fetchPhotos(searchCriteria, page);
         const results = data.results;
         setTotalPages(data.total_pages);
-        console.log("App: getPhotos() totalPages", totalPages);
+        // console.log("App: getPhotos() totalPages", totalPages);
         setPhotos((prevPhotos) => {
           return [...prevPhotos, ...results];
         });
